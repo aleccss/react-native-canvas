@@ -25,7 +25,7 @@ class AutoScaledCanvas {
   }
 
   toDataURL(...args) {
-    return this.element.toDataURL(...args);
+    return { result : this.element.toDataURL(...args) };
   }
 
   autoScale() {
