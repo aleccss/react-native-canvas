@@ -110,6 +110,7 @@ export default class Canvas extends Component {
       return (
         <View style={{width, height, overflow: 'hidden', flex: 0, ...style}}>
           <WebView
+            originWhitelist={['*']}
             ref={this.handleRef}
             style={{width, height, overflow: 'hidden', backgroundColor: 'transparent'}}
             source={{html}}
@@ -127,6 +128,7 @@ export default class Canvas extends Component {
     return (
       <View style={{width, height, overflow: 'hidden', flex: 0, ...style}}>
         <WebView
+          originWhitelist={['*']}
           ref={this.handleRef}
           style={{width, height, overflow: 'hidden', backgroundColor: 'transparent'}}
           source={{html, baseUrl: '/'}}
