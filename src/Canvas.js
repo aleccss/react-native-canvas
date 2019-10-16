@@ -69,7 +69,7 @@ export default class Canvas extends Component {
   };
 
   handleMessage = e => {
-    let data = JSON.parse(e.nativeEvent.data);
+    let data = JSON.parse(decodeURIComponent(decodeURIComponent(e.nativeEvent.data)));
     switch (data.type) {
       case 'log': {
         console.log(...data.payload);
