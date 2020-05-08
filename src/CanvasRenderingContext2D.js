@@ -59,6 +59,7 @@ import {webviewTarget, webviewProperties, webviewMethods} from './webview-binder
   'strokeText',
   'transform',
   'translate',
+  'drawFancyShit',
 ])
 export default class CanvasRenderingContext2D {
   constructor(canvas) {
